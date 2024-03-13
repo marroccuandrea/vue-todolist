@@ -39,7 +39,6 @@ createApp({
             }else{
                 this.messaggioErrore = 'Attenzione inserisci più di 4 caratteri'
             }
-
         },
     }
 
