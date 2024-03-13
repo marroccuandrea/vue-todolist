@@ -23,8 +23,12 @@ createApp({
     },
 
     methods:{
-        cancella(indice){
+        cancella(indice, toDo){
+            if(toDo.done == true){
             this.todoList.splice(indice,1)
+            }else{
+                alert('Non puoi cancellarlo se prima non lo completi')
+            }
         },
 
         newToDo(){
@@ -36,7 +40,7 @@ createApp({
                 this.messaggioErrore = 'Attenzione inserisci più di 4 caratteri'
             }
 
-            }
+        },
     }
 
 

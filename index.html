@@ -44,7 +44,7 @@
           @click="toDo.done = !toDo.done"
           :class="{'done' : toDo.done === true} ">
           {{ toDo.testo }}</span>
-          <i @click="cancella(indice)" class="fa-solid fa-trash-can"></i>
+          <i @click="cancella(indice, toDo)" class="fa-solid fa-trash-can"></i>
         </li>
        
 
