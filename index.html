@@ -38,7 +38,9 @@
     <div class="task-container">
       <ul>
         <li v-for="(toDo, indice) in todoList">
-          <span>{{ toDo.testo }}</span>
+          <span 
+          :class="{'done' : toDo.done === true} ">
+          {{ toDo.testo }}</span>
           <i class="fa-solid fa-trash-can"></i>
         </li>
        
