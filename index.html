@@ -34,7 +34,7 @@
       @keyup.enter="newToDo"
       placeholder="Nuovo task"type="text">
       <button @click="newToDo" >Aggiungi</button>
-      <p class="error"></p>
+      <p class="error">{{ messaggioErrore }}</p>
     </div>
 
     <div class="task-container">

@@ -18,6 +18,7 @@ createApp({
                 },
             ],
             newTask: '',
+            messaggioErrore: '',
         }
     },
 
@@ -27,10 +28,15 @@ createApp({
         },
 
         newToDo(){
-            const elemento = {testo:this.newTask, done:false};
-            this.todoList.unshift(elemento);
-            this.newTask = ''
-        },
+            if(this.newTask.length >= 4){
+                const elemento = {testo:this.newTask, done:false};
+                this.todoList.unshift(elemento);
+                this.newTask = ''
+            }else{
+                this.messaggioErrore = 'Attenzione inserisci più di 4 caratteri'
+            }
+
+            }
     }
 
 
