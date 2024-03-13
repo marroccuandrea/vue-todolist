@@ -29,6 +29,7 @@ createApp({
         newToDo(){
             const elemento = {testo:this.newTask, done:false};
             this.todoList.unshift(elemento);
+            this.newTask = ''
         },
     }
 
