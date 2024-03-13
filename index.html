@@ -37,22 +37,11 @@
 
     <div class="task-container">
       <ul>
-        <li>
-          <span>task....</span>
+        <li v-for="(toDo, indice) in todoList">
+          <span>{{ toDo.testo }}</span>
           <i class="fa-solid fa-trash-can"></i>
         </li>
-        <li>
-          <span>task....</span>
-          <i class="fa-solid fa-trash-can"></i>
-        </li>
-        <li>
-          <span>task....</span>
-          <i class="fa-solid fa-trash-can"></i>
-        </li>
-        <li>
-          <span>task....</span>
-          <i class="fa-solid fa-trash-can"></i>
-        </li>
+       
 
       </ul>
 

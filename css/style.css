@@ -73,6 +73,6 @@ img{
   color: red;
 }
 
-.task-container li.done{
+.task-container li .done{
   text-decoration: line-through;
 }
