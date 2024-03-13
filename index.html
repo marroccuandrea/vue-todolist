@@ -41,7 +41,7 @@
           <span 
           :class="{'done' : toDo.done === true} ">
           {{ toDo.testo }}</span>
-          <i class="fa-solid fa-trash-can"></i>
+          <i @click="cancella(indice)" class="fa-solid fa-trash-can"></i>
         </li>
        
 
