@@ -41,6 +41,7 @@
       <ul>
         <li v-for="(toDo, indice) in todoList">
           <span 
+          @click="toDo.done = !toDo.done"
           :class="{'done' : toDo.done === true} ">
           {{ toDo.testo }}</span>
           <i @click="cancella(indice)" class="fa-solid fa-trash-can"></i>
